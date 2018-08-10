@@ -12,8 +12,10 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
     <!-- FontAwsome -->
     <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/full-width-pics.css" rel="stylesheet">
 
@@ -47,33 +49,36 @@
       </div>
     </nav>
 <!-- Navigation 2 -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark2">
-      <div class="container">
-        <div class="collapse navbar-collapse " id="navbarResponsive">
+    
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark2">
+        <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav justify-content-center">
             <li class="nav-item">
-              <a class="nav-link" href="#">Qui sommes-nous <br><i class="fas fa-caret-down"></i>
-
-
-
-              </a>
+              <a class="nav-link" href="#">Qui sommes-nous <br><i class="fas fa-caret-down"></i><span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">La région de nigata<br><i class="fas fa-caret-down"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Où nous trouver<br><i class="fas fa-caret-down"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nos produits<br><i class="fas fa-caret-down"></i></a>
-            </li>
-            <li class="nav-item">
-              <input type="tel" placeholder="Rechercher">
-            </li>
+                <a class="nav-link" href="#">La région de nigata<br><i class="fas fa-caret-down"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Où nous trouver<br><i class="fas fa-caret-down"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nos produits<br><i class="fas fa-caret-down"></i></a>
+              </li>
+              <li class="nav-item">
+              <form id="search">
+                <i class="fas fa-search" style="color: #ffffff"></i><input type="text" class="form-control" placeholder="RECHERCHER" />
+              </form>
+              </li>
           </ul>
         </div>
-      </div>
-    </nav>
+        </div>
+      </nav>
     <!-- Header - set the background image for the header in the line below -->
     <header class="py-5 bg-image-full" style="background-image: url('Images/slider-1.jpg');">
     </header>
@@ -223,11 +228,13 @@ Ces poires sont principalement cultivées à Shirone (Niigata), qu'on appelle au
         
         <section class="section1">
             <div class="container">
-              <div class="blocn justify-content-center">
-              <p><img src="Images/02.png">
+              <div class="blocn">
+              <img src="Images/02.png">
               La newsletter kinassé
-              <input type="text" placeholder="J’inscris mon e-mail et je reçois la newsletter">
-              <input type="button" value="Valider"></p>
+              <input type="text" placeholder="J’inscris mon e-mail et je reçois la newsletter" class="message">
+              <input type="button" value="Valider" class="send">
+              </div>
+          </div>
             </div>
             </div>
           </section>

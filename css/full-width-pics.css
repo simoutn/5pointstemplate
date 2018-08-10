@@ -1,22 +1,15 @@
-body {
- /* padding-top: 54px;*/
-}
-
-@media (min-width: 992px) {
-  body {
-  /*  padding-top: 56px;*/
-  }
-}
 .navbar-nav {
   flex-direction: initial;
   width: 100%;
 }
-.navbar-nav li a{
+.navbar-dark .navbar-nav .nav-link{color: #fff;}
+.navbar-nav li a {
 color: #fff;
+font-size: 16px;
 display: block;
-    padding: .5rem 1rem;
-    text-align: center;
-    text-transform: uppercase;
+text-align: center;
+text-transform: uppercase;
+margin-left: 5px;
 }
 .navbar-nav2 li a{
   color: #fff;
@@ -88,3 +81,60 @@ font-weight: bold;
   background-size: cover;
   -o-background-size: cover;
 }
+
+#search input{
+    width: 80%;
+    outline: 0;
+    border: 0;
+    font-size: 20px;
+    margin-left: 15px;
+    border-bottom : 1px solid #fff;
+    color: #fff;
+    background: none;
+    border-radius: 0;
+    display: inline;
+}
+#newsletter{
+  display: block;
+  clear: both;
+}
+#newsletter input .message{
+  height: 100%;
+    width: 50%;
+    outline: 0;
+    border: 1ps solid #000;
+    font-size: 20px;
+    color: #fff;
+    background: none;
+    border-radius: 0;
+}.send{
+  color: #fff;
+  background: #000;
+  height: 100%;
+    width: 20%;
+    outline: 0;
+    font-size: 20px;
+    color: #fff;
+
+    border-radius: 0;
+}
+.message{width: 50%}
+.inner-addon {
+  position: relative;
+}
+
+/* style glyph */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align glyph */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
